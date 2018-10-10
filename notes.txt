@@ -1,0 +1,37 @@
+* Error Reporting
+  
+** Fatal
+*** Schema
+:PARSE: .schema won't parse
+:PARSE: JSON schema error within a field
+*** Local
+:PARSE: .local won't parse
+*** Value
+
+** Error
+*** Schema
+:INSTANTIATE: Unsatisfied default refs
+:PRODUCE: Unsatisfied inherits
+:PRODUCE: composed schema.default references externals
+*** Local
+:INSTANTIATE: Local value == schema.doc
+:INSTANTIATE: Local fails validation rules
+*** Value
+:PRODUCE: Value fails regex validation (e.g. composed via default)
+:PRODUCE: Required field not present
+
+** Warning
+*** Schema
+*** Local
+:INSTANTIATE: Local value shadows default
+:PRODUCE: Local value has no schema
+*** Value
+
+** Info
+*** Schema
+:INHERIT: Internalization overrides inherited externalization
+*** Local
+*** Value
+:PRODUCE: Produced value shadows inherited value
+:PRODUCE: Value source report
+
